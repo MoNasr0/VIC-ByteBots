@@ -86,11 +86,12 @@ map = [['' for _ in range(x)] for _ in range(y)]
 visited = [['' for _ in range(x)] for _ in range(y)]
 
 pos = [0, 0]
-surr = list(input())
-for i in range(len(surr)):
-    surr[i] = int(surr[i])
-print(surr)
-ultrasonics = [surr]
+while 1:
+    surr = list(input())
+    for i in range(len(surr)):
+        surr[i] = int(surr[i])
+    ultrasonics = [surr]
+    dfs(ultrasonics)
 
 # ultrasonics = [[1, 0, 0], [1, 0, 0], [1, 0, 0], [0, 1, 0], [1, 1, 0], [0, 1, 0], [0, 0, 0], [0, 0, 1], [1, 0, 1], [1, 0, 0], [0, 0, 1], [1, 0, 0], [0, 1, 1], [1,0, 0], [0, 0, 0]]
 old_pos = [0, 0]
